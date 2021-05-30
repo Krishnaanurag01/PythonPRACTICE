@@ -56,27 +56,39 @@ class bst:
             self.Rchild.Traversal_Post_Order()
         print(self.key,end=' ')
 
-    def delete(self,data):
+    def delete(self,data,curr):
         if self.key is None:
             print("Tree is empty !")
             return
         if data<self.key:
             if self.Lchild:
-                self.Lchild=self.Lchild.delete(data)
+                self.Lchild=self.Lchild.delete(data,curr)
             else:
                 print("Data Not Present !!")
         elif data>self.key:
             if self.Rchild:
-                self.Rchild=self.Rchild.delete(data)
+                self.Rchild=self.Rchild.delete(data,curr)
             else:
                 print("Data Not Present !!")
         else:
             if self.Lchild is None:
                 temp=self.Rchild
+                if data==curr:
+                    self.key=temp.key
+                    self.Lchild=temp.Lchild
+                    self.Rchild=temp.Rchild
+                    temp=None
+                    return
                 self=None
                 return temp
             if self.Rchild is None:
                 temp=self.Lchild
+                if data==curr:
+                    self.key=temp.key
+                    self.Lchild=temp.Lchild
+                    self.Rchild=temp.Rchild
+                    temp=None
+                    return
                 self=None
                 return temp
             node=self.Rchild
@@ -86,16 +98,43 @@ class bst:
             self.Rchild=self.Rchild.delete(node.key)
         return self
 
+    def smallest_key(self):
+        # if not self.Lchild :
+        #     print(f"{self.key} is smallest")
+        # else:
+        #     if self.Lchild:
+        #         self.Lchild.smallest_key()
+        current=self
+        while current.Lchild:
+            current=current.Lchild
+        print("Smallest key is,",current.key)
+    
+    def largest_key(self):
+        current=self
+        while current.Rchild:
+            current=current.Rchild
+        print("Largest key is,",current.key)
+    
+
+
+
+def count(node):
+    if node is None:
+        return 0
+    return 1+count(node.Lchild)+count(node.Rchild)
+
 
 
 root=bst(10)
-# l=[4,5,6,7,8,2,1]
-# for i in l:
-#     root.insert(i)
+l=[11,12,13]
+for i in l:
+    root.insert(i)
 
+# if count(root)>1:
+#     root.delete(int(input()),root.key)
+# else:
+#     print("Can't delete the node !!")
 
-print(root.Traversal_Pre_Order())
-
-root.delete(10)
-
-print(root.Traversal_Pre_Order())
+# print(root.Traversal_Pre_Order())
+print(root.smallest_key())
+print(root.largest_key())
