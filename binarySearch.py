@@ -14,7 +14,6 @@ def Binary_Search(arr,low,high,num):
             Binary_Search(arr,mid+1,high,num)            
         else:
             return False
-        
-
+            
 l,num=list(map(int,input("Enter the elements :").split())),int(input("Enter the element you wanna search: "))
 Binary_Search(l,0,len(l),num)
