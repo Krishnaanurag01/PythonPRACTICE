@@ -1,7 +1,12 @@
-n=[input().split() for _ in range(int(input()))]
+n=[tuple(input().split()) for _ in range(int(input()))]
 
-def ss(m):
-    return int(m[2])
-print(sorted(n,key=ss))
+# method-01
 
+# def ss(m):
+#     return int(m[1])
 # print(sorted(n,key=ss))
+
+
+# method-02
+
+print(sorted(n,key=lambda x:int(x[1])))
