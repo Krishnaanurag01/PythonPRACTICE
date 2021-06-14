@@ -64,9 +64,11 @@
 # x._b = 60
 # print(x.getB())
 
-f = open('README.md')
-f.readlines()
-print(f.name)
-print ( f.closed )
-f.close()
-print ( f.closed )
+# f = open('README.md')
+# f.readlines()
+# print(f.name)
+# print ( f.closed )
+# f.close()
+# print ( f.closed )
+
+
