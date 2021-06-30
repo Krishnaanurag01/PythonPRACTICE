@@ -25,31 +25,54 @@
 #                     return False
     # return True
 
-n = input()
-li=list(map(str,n))
+# n = input()
+# li=list(map(str,n))
 
-def bstack(m):
-    stack = []
-    for i in m:
-        if i in ['[', '{', '(']:
-            stack.append(i)
-            continue
-        else:
-            n=stack.pop()
-            if i ==")":
-                if n=="(":
-                    return True
-            if i =="]":
-                if n=="[":
-                    return True
-            if i =="{":
-                if n=="}":
-                    return True
-    return False
-print(bstack(li))
+# def bstack(m):
+#     stack = []
+#     for i in m:
+#         if i in ['[', '{', '(']:
+#             stack.append(i)
+#             continue
+#         else:
+#             n=stack.pop()
+#             if i ==")":
+#                 if n=="(":
+#                     return True
+#             if i =="]":
+#                 if n=="[":
+#                     return True
+#             if i =="{":
+#                 if n=="}":
+#                     return True
+#     return False
+# print(bstack(li))
 
 
 # if bstack!=None:
 #     print(True)
 # else:
 #     print("False")
+
+n=input()
+li=list(map(str,n))
+
+def bstack(li):
+    stack=[]
+    for i in li:
+        if i in ( "[" ,"{", "(" ):
+            stack.append(i)
+        else:
+            if not stack:
+                return False
+            top=stack.pop()
+            if top=="[" and i != "]" :
+                return False
+            elif top=="{" and i!="}":
+                return False
+            elif top=="(" and i!=")":
+                return False
+    return True
+
+print(bstack(li))
+

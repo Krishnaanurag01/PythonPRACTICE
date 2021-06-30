@@ -71,4 +71,9 @@
 # f.close()
 # print ( f.closed )
 
+# def hel():
+#     li=[2,5,6,7]
+#     return *[2,5,6,7]
 
+# num=[hel()]
+# import math as m

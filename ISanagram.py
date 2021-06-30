@@ -1,5 +1,5 @@
 a="aabac"
-b="bcaa"
+b="bcaaa"
 A=[0 for i in range(256)]
 B=[0 for i in range(256)]
 # print(int("c"))
