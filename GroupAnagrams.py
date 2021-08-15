@@ -9,3 +9,5 @@ for i in n:
 
 for i in ans.values():
     print(i)
+
+print(ans)
