@@ -1,11 +1,9 @@
-# n=input()
-# total=0
-# for i in n:
-#     total+=int(i)**len(n)
-# print(total==int(n))
-
-# print(sum(m))
+num = input()
+l = []
+for i in num:
+    l.append(int(i)**len(num))
+print(sum(l))
 
 
 # n=
-print(sum([int(i)**4 for i in input("Enter any four digit ARMSTRONG no: ")])==int(input("Enter again: ")))
+# print(sum([int(i)**4 for i in input("Enter any four digit ARMSTRONG no: ")])==int(input("Enter again: ")))
