@@ -1,96 +1,96 @@
-# # # # Enter your code here. Read input from STDIN. Print output to STDOUT
-# # # from typing import Collection
+# # # # # Enter your code here. Read input from STDIN. Print output to STDOUT
+# # # # from typing import Collection
 
 
-# # # from collections import Counter
-# # # x=int(input())
-# # # m=[int(i) for i in input().split()]
-# # # nc=int(input())
-# # # temp=[]
-# # # for _ in range(nc):
-# # #     temp.append(list(map(int,input().split())))
-# # # counterx=Counter(m)
-# # # print(counterx)
-# # # # for i in temp:
-# # # #     if counterx.
+# # # # from collections import Counter
+# # # # x=int(input())
+# # # # m=[int(i) for i in input().split()]
+# # # # nc=int(input())
+# # # # temp=[]
+# # # # for _ in range(nc):
+# # # #     temp.append(list(map(int,input().split())))
+# # # # counterx=Counter(m)
+# # # # print(counterx)
+# # # # # for i in temp:
+# # # # #     if counterx.
 
-# # s=set('AaBbcde1128')
-# # l=list(s)
-# # print(l)
-# # uc=0
-# # isal=True
-# # digit=0
-# # for i in l:
-# #     if i.isupper():
-# #         uc+=1
+# # # s=set('AaBbcde1128')
+# # # l=list(s)
+# # # print(l)
+# # # uc=0
+# # # isal=True
+# # # digit=0
+# # # for i in l:
+# # #     if i.isupper():
+# # #         uc+=1
 
-# # for i in l:
-# #     if i.isdigit():
-# #         digit+=1
-# # for i in l:
-# #     if not i.isalnum():
-# #         isal=False
-
-
-# # if len(l)<10 or len(l)>10:
-# #     print("invalid")
-# # elif uc<2:
-# #     print("Invalid")
-# # elif isal is False:
-# #     print("Invalid")
-# # elif digit<3:
-# #     print("Invalid")
-# # else:
-# #     print("Valid")
-
-# class Roll:
-#     def __init__(self, id):
-#         self.id = id
-#         id = 231
-#         return id
-
-# val = Roll(321)
-# print (val.id)
-
-# class X:
-#     def __init__(self):
-#          self.a = 10
-#          self._b = 20
-#          self.b = 20
-#     def getB(self):
-#          return self.b
-
-# x = X()
-# x._b = 60
-# print(x.getB())
-
-# f = open('README.md')
-# f.readlines()
-# print(f.name)
-# print ( f.closed )
-# f.close()
-# print ( f.closed )
-
-# def hel():
-#     li=[2,5,6,7]
-#     return *[2,5,6,7]
-
-# num=[hel()]
-# import math as m
+# # # for i in l:
+# # #     if i.isdigit():
+# # #         digit+=1
+# # # for i in l:
+# # #     if not i.isalnum():
+# # #         isal=False
 
 
-n = int(input())
-incomeList = [int(input()) for _ in range(n)]
-childrensList = [int(input()) for _ in range(n)]
+# # # if len(l)<10 or len(l)>10:
+# # #     print("invalid")
+# # # elif uc<2:
+# # #     print("Invalid")
+# # # elif isal is False:
+# # #     print("Invalid")
+# # # elif digit<3:
+# # #     print("Invalid")
+# # # else:
+# # #     print("Valid")
 
-total = 0
-count = 0
-for i in range(n):
-    if(childrensList[i] > 2):
-        total += incomeList[i]
-        count+=1
+# # class Roll:
+# #     def __init__(self, id):
+# #         self.id = id
+# #         id = 231
+# #         return id
 
-print(f"Avg income is : {total//count}")
+# # val = Roll(321)
+# # print (val.id)
+
+# # class X:
+# #     def __init__(self):
+# #          self.a = 10
+# #          self._b = 20
+# #          self.b = 20
+# #     def getB(self):
+# #          return self.b
+
+# # x = X()
+# # x._b = 60
+# # print(x.getB())
+
+# # f = open('README.md')
+# # f.readlines()
+# # print(f.name)
+# # print ( f.closed )
+# # f.close()
+# # print ( f.closed )
+
+# # def hel():
+# #     li=[2,5,6,7]
+# #     return *[2,5,6,7]
+
+# # num=[hel()]
+# # import math as m
+
+
+# n = int(input())
+# incomeList = [int(input()) for _ in range(n)]
+# childrensList = [int(input()) for _ in range(n)]
+
+# total = 0
+# count = 0
+# for i in range(n):
+#     if(childrensList[i] > 2):
+#         total += incomeList[i]
+#         count+=1
+
+# print(f"Avg income is : {total//count}")
  
 
 
@@ -98,14 +98,4 @@ print(f"Avg income is : {total//count}")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+print(0xA , 0xB ,0xC)
