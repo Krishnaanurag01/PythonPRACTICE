@@ -6,6 +6,6 @@ for i in n:
     if(i not in res):
         res.append(i)
 
-print(res)
+# print(res)
 print(list(dict.fromkeys(n)))
 
